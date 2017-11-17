@@ -8,8 +8,6 @@ import glob
 import pickle
 
 
-
-
 def imlist(path):
     """
     The function imlist returns all the names of the files in
@@ -57,21 +55,26 @@ def main():
 
     flann = cv2.FlannBasedMatcher(index_params, search_params)
 
-    trainer = cv2.BOWKMeansTrainer(50)
+    trainer = cv2.BOWKMeansTrainer(500)
 
     print(dir(trainer))
     extract_bow = cv2.BOWImgDescriptorExtractor(sift, flann)
 
     imgs, cnt = getFiles('cliparts/')
-    allDescriptors = []
+    allDescriptors = None
     for word, imlist in imgs.items():
         #print("category" + word)
         for img in imlist:
-            key_points, descritpors = sift.detectAndCompute(img,None);
-            img2 = cv2.drawKeypoints(img, key_points)
-            cv2.imshow(word, img2)
-            #cv2.drawKeypoints(img, key_points, img,  cv2.Scalar(2, 254, 255), cv2.DRAW_RICH_KEYPOINTS)
-            trainer.add(descritpors)
+            key_points, descriptors = sift.detectAndCompute(img,None);
+            if(allDescriptors is None):
+                allDescriptors = descriptors;
+            else:
+                allDescriptors = np.concatenate((allDescriptors,descriptors))
+            trainer.add(descriptors)
+
+    #pickle all descriptors for tests of k-means
+    with open('allDescs.pkl', 'wb') as f:
+        pickle.dump(allDescriptors, f)
 
     vocabulary = trainer.cluster();
     extract_bow.setVocabulary(vocabulary)
