@@ -5,6 +5,7 @@ import math
 from sklearn.cluster import KMeans
 import os
 import glob
+import pickle
 
 
 
@@ -40,12 +41,15 @@ def euclideanDistance(instance1, instance2, length):
 		distance += pow((instance1[x] - instance2[x]), 2)
 	return math.sqrt(distance)
 
+def cosineDistance(in1,in2):
+    distance = 0;
+
 
 
 def main():
     print(cv2.__version__)
 
-    sift = cv2.xfeatures2d.SIFT_create()
+    sift = cv2.xfeatures2d.SURF_create()
 
     FLANN_INDEX_KDTREE = 0
     index_params = dict(algorithm=FLANN_INDEX_KDTREE, trees=5)
@@ -58,18 +62,22 @@ def main():
     print(dir(trainer))
     extract_bow = cv2.BOWImgDescriptorExtractor(sift, flann)
 
-    imgs, cnt = getFiles('train/')
+    imgs, cnt = getFiles('cliparts/')
+    allDescriptors = []
     for word, imlist in imgs.items():
         #print("category" + word)
         for img in imlist:
             key_points, descritpors = sift.detectAndCompute(img,None);
+            img2 = cv2.drawKeypoints(img, key_points)
+            cv2.imshow(word, img2)
+            #cv2.drawKeypoints(img, key_points, img,  cv2.Scalar(2, 254, 255), cv2.DRAW_RICH_KEYPOINTS)
             trainer.add(descritpors)
 
     vocabulary = trainer.cluster();
     extract_bow.setVocabulary(vocabulary)
 
     #print(dir(extract_bow))
-        #print(np.shape(vocabulary))
+    #print(np.shape(vocabulary))
 
     traindata, trainlabels = [], []
     cnt =0
@@ -86,9 +94,11 @@ def main():
     print(extract_bow.descriptorSize())
     print(labels_map)
 
-    svm = cv2.ml.SVM_create()
+    #print(dir(cv2.ml))
+
+    svm = cv2.ml.KNearest_create()
     svm.train(np.array(traindata), cv2.ml.ROW_SAMPLE, np.array(trainlabels))
-    svm.save('C:\skola\VMM\TestOpenCV\svm1.xml')
+    svm.save('svm1.xml')
 
     for word, imlist in imgs.items():
         # print("category" + word)
