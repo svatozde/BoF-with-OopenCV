@@ -25,9 +25,9 @@ class KMeansTest(unittest.TestCase):
 
         distances = list()
         for i in range(0, len(centroids1)):
-            newCentroid = centroids1[i]
-            oldCentroid = centroids2[i]
-            dist = distance.euclidean(newCentroid, oldCentroid)
+            scipi_centroids = centroids1[i]
+            my_centroids = centroids2[i]
+            dist = distance.euclidean(scipi_centroids, my_centroids)
             distances.append(dist)
 
         print(distances)
@@ -36,3 +36,5 @@ class KMeansTest(unittest.TestCase):
 
         #not a good criteria but this should
         self.assertTrue(avgDistance < 0.1)
+
+        bag = BAG()

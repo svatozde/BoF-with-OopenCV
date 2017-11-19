@@ -4,12 +4,15 @@ from Distance import EuclideanDistance
 
 
 class KMeans:
-    def __init__(self, _vectors, _k, _initial=None):
+    def __init__(self, _vectors, _k, _initial=None, _distance_alg=None):
         self.vectors = _vectors
         self.k = _k
         self.MAX_ITERATIONS = 30;
         self.MIN_AVERAGE_CHANGE = 0.001
-        self.d = EuclideanDistance()
+        if(_distance_alg is None):
+            self.d = EuclideanDistance()
+        else:
+            self.d = _distance_alg
         self.centroids = None
         if (_initial is not None and len(_initial) != _k):
             raise ValueError('initial centroids size does not match k')
@@ -29,7 +32,7 @@ class KMeans:
                 clusters[nearest] = [x]
         return clusters
 
-    def reevaluate_centers(self, centroids, clusters):
+    def reevaluate_centers(self,clusters):
         newmu = []
         keys = sorted(clusters.keys())
         for k in keys:
@@ -38,6 +41,7 @@ class KMeans:
 
     def has_converged(self, centroids, oldCentroids):
         distances = list()
+
         for i in range(0, len(centroids)):
             newCentroid = centroids[i]
             oldCentroid = oldCentroids[i]
@@ -63,5 +67,5 @@ class KMeans:
             print(cnt)
             oldCentroids = centroids
             clusters = self.cluster_points(vectors, centroids)
-            centroids = self.reevaluate_centers(oldCentroids, clusters)
+            centroids = self.reevaluate_centers(clusters)
         return (centroids, clusters)
