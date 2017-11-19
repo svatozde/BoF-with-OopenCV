@@ -9,7 +9,7 @@ import cv2
 
 
 ALLOWED_EXTENSIONS = ['jpg', 'jpeg']
-UPLOAD_FOLDER = '/Users/andrej/CVUT/VMM/BoF-server/uploads'
+UPLOAD_FOLDER = 'uploads'
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
