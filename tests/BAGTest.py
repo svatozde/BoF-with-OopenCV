@@ -6,14 +6,12 @@ import unittest
 import cv2
 import numpy as np
 import scipy.cluster.vq as vq
-from Distance import EuclideanDistance
+from src.Distance import EuclideanDistance
 
 from src.BAG import BAG
 
 
 class BAGTest(unittest.TestCase):
-
-
     def test_bag_creation(self):
         with open('descsPerImg.pkl', 'rb') as f:
             descriptors = pickle.load(f)
@@ -31,22 +29,22 @@ class BAGTest(unittest.TestCase):
 
         distance = EuclideanDistance();
 
-        bag = BAG(centroids1,None,distance)
+        bag = BAG(centroids1, None, distance)
 
         for name, descs in descriptors.items():
-            bag.addImage(name,descs)
+            bag.addImage(name, descs)
 
         for name, descs in descriptors.items():
             ret = bag.getSimilar(descs, 0.2)
-            print(str(name) + '|' +str(ret))
+            print(str(name) + '|' + str(ret))
 
     def test_bag_with_lots_of_images(self):
-        #imgMap = self.getFiles("c:\\skola\\VMM\\jpg2\\")
-        #with open('jpg2.pkl', 'wb') as f:
+        # imgMap = self.getFiles("c:\\skola\\VMM\\jpg2\\")
+        # with open('jpg2.pkl', 'wb') as f:
         #   pickle.dump(imgMap, f)
 
-        with open('jpg2.pkl', 'rb') as f:
-           imgMap = pickle.load(f)
+        with open('../jpg2.pkl', 'rb') as f:
+            imgMap = pickle.load(f)
 
         allDescriptors = None
         for descs in imgMap.values():
@@ -66,13 +64,16 @@ class BAGTest(unittest.TestCase):
         for name, descs in imgMap.items():
             bag.addImage(name, descs)
 
+        with open('BAG.pkl', 'wb') as f:
+            pickle.dump(bag, f)
+
         for name, descs in imgMap.items():
-            ret = bag.getSimilar(descs, 0.95)
+            ret = bag.getSimilar(descs, 0.97)
             print(str(name) + '|' + str(ret))
 
         print('end')
 
-    def getFiles(self,path):
+    def getFiles(self, path):
         sift = cv2.xfeatures2d.SIFT_create(nfeatures=250)
         imap = {}
         count = 0
@@ -84,5 +85,5 @@ class BAGTest(unittest.TestCase):
             key_points, descriptors = sift.detectAndCompute(img, None);
             imap[imagefile] = descriptors
             cnt += 1
-            print(str(size)+"|"+str(cnt))
+            print(str(size) + "|" + str(cnt))
         return imap

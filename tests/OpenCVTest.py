@@ -32,16 +32,15 @@ def getFiles(path):
     return [imlist, count]
 
 
-
 def euclideanDistance(instance1, instance2, length):
-	distance = 0
-	for x in range(length):
-		distance += pow((instance1[x] - instance2[x]), 2)
-	return math.sqrt(distance)
+    distance = 0
+    for x in range(length):
+        distance += pow((instance1[x] - instance2[x]), 2)
+    return math.sqrt(distance)
 
-def cosineDistance(in1,in2):
+
+def cosineDistance(in1, in2):
     distance = 0;
-
 
 
 def main():
@@ -63,41 +62,41 @@ def main():
     imgs, cnt = getFiles('cliparts/')
     allDescriptors = None
     for word, imlist in imgs.items():
-        #print("category" + word)
+        # print("category" + word)
         for img in imlist:
-            key_points, descriptors = sift.detectAndCompute(img,None);
-            if(allDescriptors is None):
+            key_points, descriptors = sift.detectAndCompute(img, None);
+            if (allDescriptors is None):
                 allDescriptors = descriptors;
             else:
-                allDescriptors = np.concatenate((allDescriptors,descriptors))
+                allDescriptors = np.concatenate((allDescriptors, descriptors))
             trainer.add(descriptors)
 
-    #pickle all descriptors for tests of k-means
+    # pickle all descriptors for tests of k-means
     with open('allDescs.pkl', 'wb') as f:
         pickle.dump(allDescriptors, f)
 
     vocabulary = trainer.cluster();
     extract_bow.setVocabulary(vocabulary)
 
-    #print(dir(extract_bow))
-    #print(np.shape(vocabulary))
+    # print(dir(extract_bow))
+    # print(np.shape(vocabulary))
 
     traindata, trainlabels = [], []
-    cnt =0
+    cnt = 0
     labels_map = {}
     for word, imlist in imgs.items():
-        #print("category " + word)
+        # print("category " + word)
 
         labels_map[cnt] = word
         for img in imlist:
-            traindata.extend(extract_bow.compute(img,sift.detect(img)))
+            traindata.extend(extract_bow.compute(img, sift.detect(img)))
             trainlabels.append(cnt)
         cnt += 1
 
     print(extract_bow.descriptorSize())
     print(labels_map)
 
-    #print(dir(cv2.ml))
+    # print(dir(cv2.ml))
 
     svm = cv2.ml.KNearest_create()
     svm.train(np.array(traindata), cv2.ml.ROW_SAMPLE, np.array(trainlabels))
@@ -109,4 +108,6 @@ def main():
             extracted = extract_bow.compute(img, sift.detect(img))
             out = svm.predict(extracted)
             print(word + " " + labels_map[out[1][0][0]])
+
+
 main()

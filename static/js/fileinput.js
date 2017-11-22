@@ -2252,7 +2252,7 @@
                         }
                         self._setProgress(101, $('#' + pid).find('.file-thumb-progress'), self.msgUploadError);
                     }
-                }, 100);
+                }, 90000);
             };
             fnComplete = function () {
                 setTimeout(function () {

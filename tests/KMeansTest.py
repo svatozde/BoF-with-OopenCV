@@ -6,10 +6,10 @@ import copy
 import numpy
 from scipy.spatial import distance
 
-from KMeans import KMeans
+from src.KMeans import KMeans
+
 
 class KMeansTest(unittest.TestCase):
-
     def test_descriptors(self):
         with open('allDescs.pkl', 'rb') as f:
             descriptors = pickle.load(f)
@@ -20,8 +20,8 @@ class KMeansTest(unittest.TestCase):
         centroids1, distorion = vq.kmeans2(descriptors, initialCentroids, minit='matrix')
         print(centroids1)
 
-        kMenas= KMeans(descriptors,500, _initial=initialCentroids)
-        centroids2,clusters = kMenas.cluster()
+        kMenas = KMeans(descriptors, 500, _initial=initialCentroids)
+        centroids2, clusters = kMenas.cluster()
 
         distances = list()
         for i in range(0, len(centroids1)):
@@ -34,5 +34,5 @@ class KMeansTest(unittest.TestCase):
         avgDistance = sum(distances) / float(len(distances))
         print(avgDistance)
 
-        #not a good criteria but this should be same as kmeansn form scipy
+        # not a good criteria but this should be same as kmeansn form scipy
         self.assertTrue(avgDistance < 0.1)
