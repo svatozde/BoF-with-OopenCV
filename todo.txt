@@ -1,0 +1,12 @@
+1)pocet centroidu -  Zdenek
+2)heuristika - Andrej /Zdenek 
+3)threshold - Andrej
+4)abstraktni test pro porovnani pro testy +  + Zdenek
+5)trenovaci testovaci mnozina - Andrej
+6)cosine distance zdenek
+
+
+
+highly optional)
+1) reduce size of arrays in cosine distance computation ????
+2) setting up search similarity threshold from UI Andrej

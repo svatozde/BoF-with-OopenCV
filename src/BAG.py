@@ -1,13 +1,14 @@
 import cv2
 import scipy
 from scipy.spatial import distance
+import numpy
 
 
 
 
 
 class BAG:
-    def __init__(self, _words, _classes, _distance):
+    def __init__(self, _words, _classes, _distance,_heuristic,_threshold,_norm):
         self.words = _words
         self.classes = _classes
         # distance alg
@@ -15,6 +16,9 @@ class BAG:
         # Map image name/id and array of best matches with nth word
         self.bag = {}
         self.sift = cv2.xfeatures2d.SURF_create()
+        self.heuristic = _heuristic
+        self.threshold=_threshold
+        self.norm = True
 
 
 
@@ -29,11 +33,20 @@ class BAG:
         for xword in self.words:
             min_distance = float("inf");
 
+            value = self.heuristic.getValue(_descriptors,xword )
+            if value > self.threshold :
+                img_values.append(value)
+            else:
+                img_values.append(0)
+            """
+                code below shoud be in heuristic class
+            """
             for desc in _descriptors:
                 curr_distance = distance.euclidean(xword, desc)
+
                 min_distance = min(min_distance, curr_distance)
 
-            img_values.append(min_distance)
+
         return img_values
 
 

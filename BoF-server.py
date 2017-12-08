@@ -8,7 +8,7 @@ import cv2
 
 ALLOWED_EXTENSIONS = ['jpg', 'jpeg','png']
 UPLOAD_FOLDER = "c:\\skola\\VMM\\jpg2\\"
-
+sift = cv2.xfeatures2d.SIFT_create(nfeatures=250)
 bag = None;
 with open('BAG.pkl', 'rb') as f:
     bag = pickle.load(f)
@@ -28,9 +28,10 @@ def upload_file():
     filename = secure_filename(file.filename)
     file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
     img = cv2.imread(os.path.join(app.config['UPLOAD_FOLDER'], filename), 0)
-    sift = cv2.xfeatures2d.SIFT_create(nfeatures=250)
+
     key_points, descriptors = sift.detectAndCompute(img, None);
     similar_images = bag.getSimilar(descriptors, 0.98)
+    bag.addImage(filename,descriptors)
 
     print(similar_images)
 
