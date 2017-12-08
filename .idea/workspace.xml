@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84715fb4-07f9-4b37-ada2-912c5cea4d20" name="Default" comment="initial commit - testing implementation of BoF in  OpenCV and Anaconda">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BoF-server.py" afterPath="$PROJECT_DIR$/BoF-server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BAG.py" afterPath="$PROJECT_DIR$/src/BAG.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Heuristic.py" afterPath="$PROJECT_DIR$/src/Heuristic.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/BAGTest.py" afterPath="$PROJECT_DIR$/tests/BAGTest.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="events_file_upload.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="events_file_upload.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/events_file_upload.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
@@ -41,8 +41,8 @@
       <file leaf-file-name="BAGTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/BAGTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="59" column="50" lean-forward="true" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+            <state relative-caret-position="238">
+              <caret line="62" column="38" lean-forward="true" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -69,16 +69,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KMeansTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/KMeansTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="OpenCVTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/OpenCVTest.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,8 +79,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Heuristic.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Heuristic.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Heuristic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BAG.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BAG.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="distance.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Anaconda3/Lib/site-packages/scipy/spatial/distance.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -99,23 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BAG.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BAG.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="66" column="12" lean-forward="false" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Distance.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Distance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="22" />
+            <state relative-caret-position="272">
+              <caret line="17" column="43" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="17" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -177,10 +179,10 @@
         <option value="$PROJECT_DIR$/static/js/events_file_upload.js" />
         <option value="$PROJECT_DIR$/Sub.py" />
         <option value="$PROJECT_DIR$/SubSetSum.py" />
+        <option value="$PROJECT_DIR$/BoF-server.py" />
+        <option value="$PROJECT_DIR$/tests/BAGTest.py" />
         <option value="$PROJECT_DIR$/src/BAG.py" />
         <option value="$PROJECT_DIR$/src/Heuristic.py" />
-        <option value="$PROJECT_DIR$/tests/BAGTest.py" />
-        <option value="$PROJECT_DIR$/BoF-server.py" />
       </list>
     </option>
   </component>
@@ -301,7 +303,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in BAGTest.py">
+  <component name="RunManager" selected="Python tests.Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images">
     <configuration name="Sub" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -387,10 +389,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in BAGTest.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python.SubSetSum" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Sub" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in BAGTest.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python.SubSetSum" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Sub" />
         <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for tests.BAGTest.BAGTest.test_bag_with_lots_of_images" />
       </list>
     </recent_temporary>
@@ -420,21 +422,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.11.19 at 08h 41m 44s.xml">
-      <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.11.19 at 08h 47m 11s.xml">
-      <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.11.19 at 09h 06m 32s.xml">
-      <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.11.19 at 09h 16m 42s.xml">
-      <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.11.19 at 10h 55m 59s.xml">
-      <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.11.19 at 17h 38m 19s.xml">
       <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
     </history-entry>
@@ -442,6 +429,21 @@
       <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.11.19 at 19h 20m 41s.xml">
+      <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.08 at 19h 07m 44s.xml">
+      <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.08 at 19h 08m 35s.xml">
+      <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.08 at 19h 09m 34s.xml">
+      <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.08 at 19h 11m 33s.xml">
+      <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.08 at 19h 12m 55s.xml">
       <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_BAGTest_py - 2017.12.08 at 18h 50m 51s.xml">
@@ -471,7 +473,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49187434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28141224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28060672" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46417445" sideWeight="0.4978701" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3115016" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -511,7 +513,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/BAGTest.py</url>
-          <line>68</line>
+          <line>69</line>
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -551,7 +553,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cliparts/stars/1.png" />
     <entry file="file://$PROJECT_DIR$/cliparts/stars/2.png" />
     <entry file="file://C:/Anaconda3/Lib/site-packages/dask/base.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -759,22 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Heuristic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Distance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/OpenCVTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -798,26 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/BAGTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="59" column="50" lean-forward="true" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BAG.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="66" column="12" lean-forward="false" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BoF-server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
@@ -833,6 +798,52 @@
         <state relative-caret-position="273">
           <caret line="31" column="160" lean-forward="false" selection-start-line="31" selection-start-column="143" selection-end-line="31" selection-end-column="160" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="43" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="17" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Anaconda3/Lib/site-packages/scipy/spatial/distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/BAGTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="62" column="38" lean-forward="true" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BAG.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Heuristic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

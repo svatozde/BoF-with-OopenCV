@@ -8,7 +8,7 @@ import numpy
 
 
 class BAG:
-    def __init__(self, _words, _classes, _distance,_heuristic,_threshold,_norm):
+    def __init__(self, _words, _classes, _distance,_heuristic,_threshold):
         self.words = _words
         self.classes = _classes
         # distance alg
@@ -33,7 +33,7 @@ class BAG:
         for xword in self.words:
             min_distance = float("inf");
 
-            value = self.heuristic.getValue(_descriptors,xword )
+            value = self.heuristic.getValue(xword,_descriptors )
             if value > self.threshold :
                 img_values.append(value)
             else:

@@ -7,11 +7,13 @@ import cv2
 import numpy as np
 import scipy.cluster.vq as vq
 from src.Distance import EuclideanDistance
+from src.Heuristic import  MinHeuristic
 
 from src.BAG import BAG
 
 
 class BAGTest(unittest.TestCase):
+    """
     def test_bag_creation(self):
         with open('descsPerImg.pkl', 'rb') as f:
             descriptors = pickle.load(f)
@@ -37,6 +39,7 @@ class BAGTest(unittest.TestCase):
         for name, descs in descriptors.items():
             ret = bag.getSimilar(descs, 0.2)
             print(str(name) + '|' + str(ret))
+    """
 
     def test_bag_with_lots_of_images(self):
         # imgMap = self.getFiles("c:\\skola\\VMM\\jpg2\\")
@@ -57,9 +60,9 @@ class BAGTest(unittest.TestCase):
 
         centroids1, distorion = vq.kmeans2(allDescriptors, initialCentroids, minit='matrix')
 
-        distance = EuclideanDistance();
+        distance = EuclideanDistance()
 
-        bag = BAG(centroids1, None, distance)
+        bag = BAG(centroids1, None, distance, MinHeuristic(), 0.9)
 
         for name, descs in imgMap.items():
             bag.addImage(name, descs)
