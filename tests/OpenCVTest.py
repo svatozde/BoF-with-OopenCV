@@ -40,7 +40,7 @@ def euclideanDistance(instance1, instance2, length):
 
 
 def cosineDistance(in1, in2):
-    distance = 0;
+    distance = 0
 
 
 def main():

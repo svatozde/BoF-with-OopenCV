@@ -4,4 +4,5 @@ jpg2_old.pkl
 jpg2.pkl
 descsPerImg.pkl
 allDescs.pkl
-.idea/
+.idea
+data
