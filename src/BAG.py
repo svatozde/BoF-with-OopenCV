@@ -15,7 +15,6 @@ class BAG:
         self.distance = _distance
         # Map image name/id and array of best matches with nth word
         self.bag = {}
-        self.sift = cv2.xfeatures2d.SURF_create()
         self.heuristic = _heuristic
         self.threshold=_threshold
         self.norm = True
@@ -31,20 +30,11 @@ class BAG:
     def _getSimilarityVector(self, _descriptors):
         img_values = []
         for xword in self.words:
-            min_distance = float("inf");
-
             value = self.heuristic.getValue(xword,_descriptors )
             if value > self.threshold :
                 img_values.append(value)
             else:
                 img_values.append(0)
-            """
-                code below shoud be in heuristic class
-            """
-            for desc in _descriptors:
-                curr_distance = distance.euclidean(xword, desc)
-
-                min_distance = min(min_distance, curr_distance)
 
 
         return img_values
