@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84715fb4-07f9-4b37-ada2-912c5cea4d20" name="Default" comment="test changes .. fixing creatign pickles">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BAG.py" afterPath="$PROJECT_DIR$/src/BAG.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Distance.py" afterPath="$PROJECT_DIR$/src/Distance.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,24 +58,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BAGTest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BAGTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/BAGTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="52" column="10" lean-forward="false" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+            <state relative-caret-position="166">
+              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="numeric.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Anaconda3/Lib/site-packages/numpy/core/numeric.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="582" column="0" lean-forward="false" selection-start-line="582" selection-start-column="0" selection-end-line="582" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -89,11 +80,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BAG.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BAG.py">
+      <file leaf-file-name="Distance.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Distance.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BAG.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BAG.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="37" column="11" lean-forward="true" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -142,6 +145,7 @@
       <find>images</find>
       <find>sift</find>
       <find>getFiles</find>
+      <find>_getSimilarityVector</find>
       <find>get_descriptors</find>
     </findStrings>
     <dirStrings>
@@ -174,7 +178,6 @@
         <option value="$PROJECT_DIR$/BAGTest.py" />
         <option value="$PROJECT_DIR$/tests/KMeansTest.py" />
         <option value="$PROJECT_DIR$/src/KMeans.py" />
-        <option value="$PROJECT_DIR$/src/Distance.py" />
         <option value="$PROJECT_DIR$/static/js/fileinput.js" />
         <option value="$PROJECT_DIR$/templates/layout.html" />
         <option value="$PROJECT_DIR$/static/js/events_file_upload.js" />
@@ -183,6 +186,7 @@
         <option value="$PROJECT_DIR$/BoF-server.py" />
         <option value="$PROJECT_DIR$/tests/BAGTest.py" />
         <option value="$PROJECT_DIR$/src/Heuristic.py" />
+        <option value="$PROJECT_DIR$/src/Distance.py" />
         <option value="$PROJECT_DIR$/src/BAG.py" />
       </list>
     </option>
@@ -284,7 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images">
+  <component name="RunManager" selected="Python tests.Unittests for BAGTest.BAGTest">
     <configuration name="SubSetSum" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -367,10 +371,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in BAGTest.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for KMeansTest.KMeansTest.test_descriptors" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for BAGTest.BAGTest" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for BAGTest.BAGTest" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in BAGTest.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for KMeansTest.KMeansTest.test_descriptors" />
         <item index="4" class="java.lang.String" itemvalue="Python.SubSetSum" />
       </list>
     </recent_temporary>
@@ -413,8 +417,8 @@
     <history-entry file="Unittests_for_BAGTest_BAGTest - 2017.12.11 at 10h 54m 14s.xml">
       <configuration name="Unittests for BAGTest.BAGTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.09 at 22h 17m 18s.xml">
-      <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
+    <history-entry file="Unittests_for_BAGTest_BAGTest - 2017.12.14 at 12h 03m 21s.xml">
+      <configuration name="Unittests for BAGTest.BAGTest" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.09 at 22h 26m 01s.xml">
       <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
@@ -449,9 +453,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.157082" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.157082" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3033586" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3347779" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -460,7 +465,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28060672" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35211268" sideWeight="0.4978701" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35211268" sideWeight="0.4978701" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3115016" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -508,11 +513,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/BAGTest.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="204" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/BAGTest.py</url>
           <line>57</line>
           <option name="timeStamp" value="208" />
         </line-breakpoint>
@@ -529,7 +529,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="210" />
+      <option name="time" value="211" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
@@ -743,14 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Distance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Anaconda3/Lib/site-packages/numpy/core/numeric.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -837,22 +829,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BAG.py">
+    <entry file="file://$PROJECT_DIR$/src/Distance.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="16" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/BAGTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="52" column="10" lean-forward="false" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+        <state relative-caret-position="166">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BAG.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="37" column="11" lean-forward="true" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

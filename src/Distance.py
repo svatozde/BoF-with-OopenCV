@@ -18,6 +18,17 @@ class EuclideanDistance(ADistance):
         return distance.euclidean(in1, in2)
 
 
+class NPCosineDistance(ADistance):
+    def distance(self, in1, in2):
+        """
+        return cosine distance of two vectors in case vectors are not same size this throws exception
+        :param in1:
+        :param in2:
+        :return:
+        """
+        return distance.cosine(in1, in2)
+
+
 class CosineDistance(ADistance):
     def distance(self, in1, in2):
         """
