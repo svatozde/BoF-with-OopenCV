@@ -1,5 +1,6 @@
 import math
 from scipy.spatial import distance
+from sklearn.metrics.pairwise import cosine_similarity
 
 
 class ADistance:
@@ -26,7 +27,7 @@ class NPCosineDistance(ADistance):
         :param in2:
         :return:
         """
-        return distance.cosine(in1, in2)
+        return 1-distance.cosine(in1, in2)
 
 
 class CosineDistance(ADistance):

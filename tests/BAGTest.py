@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 import cv2
 import numpy as np
 import scipy.cluster.vq as vq
-from src.Distance import EuclideanDistance
-from src.Heuristic import MinHeuristic
+from src.Distance import NPCosineDistance
+from src.Heuristic import CosineWordCountHeuristic
 
 from src.BAG import BAG
 
@@ -26,7 +26,7 @@ class BAGTest(unittest.TestCase):
             return img_map
 
     def getDescriptors(self, path):
-        sift = cv2.xfeatures2d.SIFT_create(nfeatures=250)
+        sift = cv2.xfeatures2d.SIFT_create(nfeatures=150)
         imap = {}
         count = 0
         files = glob.glob(path + "*")
@@ -54,17 +54,17 @@ class BAGTest(unittest.TestCase):
         centroids1, distorion = vq.kmeans2(allDescriptors, initialCentroids, minit='matrix')
         return centroids1
 
-    def create_bag(self, words, img_map, pickle_path, heurristic):
+    def create_bag(self, words, img_map, pickle_path, heurristic, threshold,normalize):
         if pickle_path is not None and glob.glob(pickle_path):
-            with open(pickle_path, 'wb') as f:
-                bag = pickle.load(f)
-            return bag
+            with open(pickle_path, 'rb') as f:
+                unpickler = pickle.Unpickler(f)
+                bag = unpickler.load()
+                return bag
 
+        #distance alg for comparing input and indexed values
+        distance = NPCosineDistance()
 
-
-        distance = EuclideanDistance()
-
-        bag = BAG(words, None, distance, heurristic, 0.9)
+        bag = BAG(words, distance, heurristic, threshold,normalize)
 
         for name, descs in img_map.items():
             print('ading: ' + name)
@@ -76,36 +76,57 @@ class BAGTest(unittest.TestCase):
         return bag
 
     def compareImages(self, img_name1, img_name2):
-        path_prefix = 'c:\\skola\\VMM\\TestOpenCV\\static\\uploads\\'
 
-        img1 = cv2.imread(path_prefix + img_name1, 0)  # queryImage
-        img2 = cv2.imread(img_name1 + img_name2, 0)  # trainImage
-        # Initiate ORB detector
-        orb = cv2.ORB_create()
-        # find the keypoints and descriptors with ORB
-        kp1, des1 = orb.detectAndCompute(img1, None)
-        kp2, des2 = orb.detectAndCompute(img2, None)
+        img1 = cv2.imread(img_name1, 0)  # queryImage
+        img2 = cv2.imread(img_name2, 0)  # trainImage
 
-        bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
-        matches = bf.match(des1, des2)
-        matches = sorted(matches, key=lambda x: x.distance)
-        img3 = cv2.drawMatches(img1, kp1, img2, kp2, matches[:10], flags=2)
-        plt.imshow(img3), plt.show()
+        # Initiate SIFT detector
+        sift = cv2.xfeatures2d.SIFT_create(nfeatures=150)
 
-        return 0;
+        kp1, des1 = sift.detectAndCompute(img1, None)
+        kp2, des2 = sift.detectAndCompute(img2, None)
+
+        FLANN_INDEX_KDTREE = 0
+        index_params = dict(algorithm=FLANN_INDEX_KDTREE, trees=5)
+        search_params = dict(checks=50)  # or pass empty dictionary
+
+        flann = cv2.FlannBasedMatcher(index_params, search_params)
+
+        matches = flann.knnMatch(des1, des2, k=2)
+
+        # Need to draw only good matches, so create a mask
+        matchesMask = [[0, 0] for i in range(len(matches))]
+
+        # ratio test as per Lowe's paper
+        number_of_matches = 0
+        for i, (m, n) in enumerate(matches):
+            if m.distance < 0.6 * n.distance:
+                matchesMask[i] = [1, 0]
+                number_of_matches += 1
+
+        draw_params = dict(matchColor=(0, 255, 0),
+                           singlePointColor=(255, 0, 0),
+                           matchesMask=matchesMask,
+                           flags=0)
+
+        img3 = cv2.drawMatchesKnn(img1, kp1, img2, kp2, matches, None, **draw_params)
+
+        plt.imshow(img3, ), plt.show()
+        return number_of_matches;
 
     def test_bag_with_lots_of_images(self):
 
-        img_map = self.get_descriptors('../static/uploads/','../small.pkl')
+        img_map = self.get_descriptors('../static/uploads/','small.pkl')
 
-        words = self.cluster(img_map,250)
+        words = self.cluster(img_map,600)
 
-        bag = self.create_bag(words, img_map, 'bag2.pkl', MinHeuristic())
+        bag = self.create_bag(words, img_map, 'bag2.pkl', CosineWordCountHeuristic(0.95), 0.1,False)
 
 
+        best_10_matches = 0
         for name, descs in img_map.items():
-            ret = bag.getSimilar(descs, 0.97)
-            for i in range(0,10):
-                self.compareImages(descs,ret[i][0])
+            ret = bag.getSimilar(descs, 0.7)
+            for i in range(0, min(len(ret),10)):
+                best_10_matches = self.compareImages(name,ret[i][0])
 
         print('end')

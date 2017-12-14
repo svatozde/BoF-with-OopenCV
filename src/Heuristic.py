@@ -1,4 +1,5 @@
 from scipy.spatial import distance
+from sklearn.metrics.pairwise import cosine_similarity
 import math
 
 
@@ -24,7 +25,10 @@ class MinHeuristic(AHeuristic):
         return min_distance
 
 
-class CosineHeuristic(AHeuristic):
+class CosineWordCountHeuristic(AHeuristic):
+    def __init__(self, _value_threshold):
+        self.value_threshold = _value_threshold
+
     def getValue(self, word, img_descriptors):
         """
         return cosine distance of two vectors in case vectors are not same size this throws exception
@@ -32,10 +36,10 @@ class CosineHeuristic(AHeuristic):
         :param in2:
         :return:
         """
-        min_distance = math.inf
+        count = 0
         for desc in img_descriptors:
-            curr_distance = distance.cosine(word, desc)
+            curr_similarity = 1-distance.cosine(word, desc)
+            if curr_similarity >= self.value_threshold:
+                count += 1
 
-            min_distance = min(min_distance, curr_distance)
-
-        return min_distance
+        return count
