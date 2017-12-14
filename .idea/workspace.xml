@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84715fb4-07f9-4b37-ada2-912c5cea4d20" name="Default" comment="initial commit - testing implementation of BoF in  OpenCV and Anaconda">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BAG.py" afterPath="$PROJECT_DIR$/src/BAG.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Heuristic.py" afterPath="$PROJECT_DIR$/src/Heuristic.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/BAGTest.py" afterPath="$PROJECT_DIR$/tests/BAGTest.py" />
+    <list default="true" id="84715fb4-07f9-4b37-ada2-912c5cea4d20" name="Default" comment="test changes .. fixing creatign pickles">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +16,8 @@
       <file leaf-file-name="BoF-server.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BoF-server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="18" />
+            <state relative-caret-position="-27">
+              <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
               <folding>
                 <element signature="e#0#110#0" expanded="true" />
               </folding>
@@ -28,43 +25,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="events_file_upload.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/events_file_upload.js">
+      <file leaf-file-name="KMeansTest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/KMeansTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="31" column="160" lean-forward="false" selection-start-line="31" selection-start-column="143" selection-end-line="31" selection-end-column="160" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BAGTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/BAGTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="62" column="38" lean-forward="true" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+            <state relative-caret-position="248">
+              <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jpg2.pkl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jpg2.pkl">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BAG.pkl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BAG.pkl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -72,21 +40,51 @@
       <file leaf-file-name="OpenCVTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/OpenCVTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="31" selection-end-column="26" />
+            <state relative-caret-position="153">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Heuristic.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Heuristic.py">
+      <file leaf-file-name="KMeans.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KMeans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            <state relative-caret-position="68">
+              <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BAGTest.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/BAGTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="52" column="10" lean-forward="false" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
               <folding>
-                <element signature="e#0#34#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="numeric.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Anaconda3/Lib/site-packages/numpy/core/numeric.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="582" column="0" lean-forward="false" selection-start-line="582" selection-start-column="0" selection-end-line="582" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cv2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/1013586911/cv2/cv2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7027" column="4" lean-forward="false" selection-start-line="7027" selection-start-column="4" selection-end-line="7027" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,10 +92,22 @@
       <file leaf-file-name="BAG.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BAG.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+            <state relative-caret-position="306">
+              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Heuristic.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Heuristic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,18 +116,8 @@
       <file leaf-file-name="distance.py" pinned="false" current-in-tab="false">
         <entry file="file://C:/Anaconda3/Lib/site-packages/scipy/spatial/distance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Distance.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Distance.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="43" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="17" selection-end-column="43" />
+            <state relative-caret-position="214">
+              <caret line="475" column="4" lean-forward="false" selection-start-line="475" selection-start-column="4" selection-end-line="475" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -142,6 +142,7 @@
       <find>images</find>
       <find>sift</find>
       <find>getFiles</find>
+      <find>get_descriptors</find>
     </findStrings>
     <dirStrings>
       <dir>C:\skola\VMM\TestOpenCV\static</dir>
@@ -181,8 +182,8 @@
         <option value="$PROJECT_DIR$/SubSetSum.py" />
         <option value="$PROJECT_DIR$/BoF-server.py" />
         <option value="$PROJECT_DIR$/tests/BAGTest.py" />
-        <option value="$PROJECT_DIR$/src/BAG.py" />
         <option value="$PROJECT_DIR$/src/Heuristic.py" />
+        <option value="$PROJECT_DIR$/src/BAG.py" />
       </list>
     </option>
   </component>
@@ -243,27 +244,7 @@
             <path>
               <item name="TestOpenCV" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestOpenCV" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestOpenCV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestOpenCV" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestOpenCV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestOpenCV" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestOpenCV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="TestOpenCV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6.2 (C:\Anaconda3\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -274,7 +255,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/skola/VMM/TestOpenCV/OpenCVTest.py" />
   </component>
@@ -304,23 +285,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python tests.Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images">
-    <configuration name="Sub" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TestOpenCV" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sub.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="SubSetSum" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -338,6 +302,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="Unittests for BAGTest.BAGTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TestOpenCV" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;BAGTest.BAGTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
     <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -352,18 +330,18 @@
       <option name="_new_target" value="&quot;BAGTest.BAGTest.test_bag_with_lots_of_images&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for tests.BAGTest.BAGTest.test_bag_with_lots_of_images" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for KMeansTest.KMeansTest.test_descriptors" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="TestOpenCV" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.BAGTest.BAGTest.test_bag_with_lots_of_images&quot;" />
+      <option name="_new_target" value="&quot;KMeansTest.KMeansTest.test_descriptors&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="Unittests in BAGTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -381,19 +359,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for tests.BAGTest.BAGTest.test_bag_with_lots_of_images" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" />
-      <item index="2" class="java.lang.String" itemvalue="Python.SubSetSum" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Sub" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in BAGTest.py" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" />
+      <item index="1" class="java.lang.String" itemvalue="Python.SubSetSum" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in BAGTest.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for BAGTest.BAGTest" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for KMeansTest.KMeansTest.test_descriptors" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" />
         <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in BAGTest.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python.SubSetSum" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Sub" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for tests.BAGTest.BAGTest.test_bag_with_lots_of_images" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for KMeansTest.KMeansTest.test_descriptors" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for BAGTest.BAGTest" />
+        <item index="4" class="java.lang.String" itemvalue="Python.SubSetSum" />
       </list>
     </recent_temporary>
   </component>
@@ -418,42 +396,49 @@
       <option name="project" value="LOCAL" />
       <updated>1508777737802</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test changes .. fixing creatign pickles">
+      <created>1513248314170</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1513248314170</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.11.19 at 17h 38m 19s.xml">
+    <history-entry file="Unittests_for_BAGTest_BAGTest - 2017.12.11 at 10h 52m 45s.xml">
+      <configuration name="Unittests for BAGTest.BAGTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_BAGTest_BAGTest - 2017.12.11 at 10h 54m 14s.xml">
+      <configuration name="Unittests for BAGTest.BAGTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.09 at 22h 17m 18s.xml">
       <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.11.19 at 17h 43m 12s.xml">
+    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.09 at 22h 26m 01s.xml">
       <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.11.19 at 19h 20m 41s.xml">
+    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.14 at 10h 43m 43s.xml">
       <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.08 at 19h 07m 44s.xml">
+    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.14 at 10h 48m 47s.xml">
       <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.08 at 19h 08m 35s.xml">
+    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.14 at 11h 35m 16s.xml">
       <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.08 at 19h 09m 34s.xml">
-      <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
+    <history-entry file="Unittests_for_KMeansTest_KMeansTest_test_descriptors - 2017.12.14 at 10h 59m 24s.xml">
+      <configuration name="Unittests for KMeansTest.KMeansTest.test_descriptors" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.08 at 19h 11m 33s.xml">
-      <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
+    <history-entry file="Unittests_for_KMeansTest_KMeansTest_test_descriptors - 2017.12.14 at 11h 01m 41s.xml">
+      <configuration name="Unittests for KMeansTest.KMeansTest.test_descriptors" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_BAGTest_BAGTest_test_bag_with_lots_of_images - 2017.12.08 at 19h 12m 55s.xml">
-      <configuration name="Unittests for BAGTest.BAGTest.test_bag_with_lots_of_images" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_BAGTest_py - 2017.12.08 at 18h 50m 51s.xml">
-      <configuration name="Unittests in BAGTest.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_BAGTest_py - 2017.12.08 at 18h 51m 32s.xml">
+    <history-entry file="Unittests_in_BAGTest_py - 2017.12.14 at 11h 02m 06s.xml">
       <configuration name="Unittests in BAGTest.py" configurationId="tests" />
     </history-entry>
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -464,25 +449,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12513313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.157082" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3033586" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3347779" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49187434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2751896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28060672" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46417445" sideWeight="0.4978701" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35211268" sideWeight="0.4978701" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3115016" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15654951" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3347779" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -491,7 +475,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit - testing implementation of BoF in  OpenCV and Anaconda" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit - testing implementation of BoF in  OpenCV and Anaconda" />
+    <MESSAGE value="test changes .. fixing creatign pickles" />
+    <option name="LAST_COMMIT_MESSAGE" value="test changes .. fixing creatign pickles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -513,21 +498,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/BAGTest.py</url>
-          <line>69</line>
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/BAG.py</url>
-          <option name="timeStamp" value="154" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/BAG.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="156" />
+          <line>80</line>
+          <option name="timeStamp" value="195" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/BAGTest.py</url>
-          <option name="timeStamp" value="188" />
+          <line>72</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/BAGTest.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/BAGTest.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/BAGTest.py</url>
+          <line>98</line>
+          <option name="timeStamp" value="209" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -537,7 +529,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="189" />
+      <option name="time" value="210" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
@@ -553,15 +545,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cliparts/stars/2.png" />
-    <entry file="file://C:/Anaconda3/Lib/site-packages/dask/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="78" column="8" lean-forward="false" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lambo.jpg" />
     <entry file="file://$PROJECT_DIR$/KMeans.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/1013586911/cv2/xfeatures2d.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -631,13 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/1013586911/cv2/cv2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118864">
-          <caret line="7027" column="4" lean-forward="false" selection-start-line="7027" selection-start-column="4" selection-end-line="7027" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -744,30 +720,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SubSetSum.py" />
-    <entry file="file://$PROJECT_DIR$/src/KMeans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="77" column="2" lean-forward="false" selection-start-line="77" selection-start-column="2" selection-end-line="77" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/KMeansTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/OpenCVTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="31" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jpg2.pkl">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="0">
@@ -783,33 +735,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BoF-server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/events_file_upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="31" column="160" lean-forward="false" selection-start-line="31" selection-start-column="143" selection-end-line="31" selection-end-column="160" />
+        <state relative-caret-position="171">
+          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Distance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="17" selection-end-column="43" />
+        <state relative-caret-position="136">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Anaconda3/Lib/site-packages/scipy/spatial/distance.py">
+    <entry file="file://C:/Anaconda3/Lib/site-packages/numpy/core/numeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="582" column="0" lean-forward="false" selection-start-line="582" selection-start-column="0" selection-end-line="582" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/1013586911/cv2/cv2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7027" column="4" lean-forward="false" selection-start-line="7027" selection-start-column="4" selection-end-line="7027" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/bag2.pkl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -817,32 +775,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/BAGTest.py">
+    <entry file="file://C:/Anaconda3/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="62" column="38" lean-forward="true" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+        <state relative-caret-position="443">
+          <caret line="604" column="32" lean-forward="true" selection-start-line="604" selection-start-column="32" selection-end-line="604" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BoF-server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#110#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/OpenCVTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Anaconda3/Lib/site-packages/scipy/spatial/distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="475" column="4" lean-forward="false" selection-start-line="475" selection-start-column="4" selection-end-line="475" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Heuristic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/KMeansTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KMeans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BAG.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+        <state relative-caret-position="306">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Heuristic.py">
+    <entry file="file://$PROJECT_DIR$/tests/BAGTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        <state relative-caret-position="173">
+          <caret line="52" column="10" lean-forward="false" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
