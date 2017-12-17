@@ -1,5 +1,6 @@
 uploads/
 *.pyc
+*.pkl
 jpg2_old.pkl
 jpg2.pkl
 descsPerImg.pkl

@@ -2,19 +2,22 @@ from flask import Flask, render_template, request, redirect, url_for, Response, 
 import json
 import os
 from werkzeug.utils import secure_filename
-import glob
+
 import cv2
-from src.BAG import create_bag
+import pickle
+
 
 # Config flask server
 ALLOWED_EXTENSIONS = ['jpg', 'jpeg', 'png']
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = "data/to_find/"
+app.config['UPLOAD_FOLDER'] = "static/uploads"
 app.config['TRAIN_IMAGE'] = "data/samples/train/"
 
 # Init bag
-bag = create_bag()
-sift = cv2.xfeatures2d.SIFT_create(nfeatures=250)
+bag = None;
+with open('f500_c3000_t99.0_b0_bag.pkl', 'rb') as f:
+    bag = pickle.load(f)
+sift = cv2.xfeatures2d.SIFT_create(nfeatures=80)
 
 
 @app.route('/', methods=['GET'])
@@ -30,12 +33,11 @@ def upload_file():
     img = cv2.imread(os.path.join(app.config['UPLOAD_FOLDER'], filename), 0)
 
     key_points, descriptors = sift.detectAndCompute(img, None)
-    similar_images = bag.find_similar_images(descriptors, 0.8)
+    similar_images = bag.getSimilar(descriptors, 0.8)
     # bag.add_image(filename, descriptors)
-
     img_names = []
     for img_name in similar_images:
-        img_names.append(img_name[0]['img_name'])
+        img_names.append(img_name[0].split("\\")[-1])
 
     return json.dumps(img_names), 200, {'ContentType': 'application/json'}
 

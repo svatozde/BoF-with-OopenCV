@@ -5,7 +5,7 @@ import math
 
 
 class BAG:
-    def __init__(self, _words, _distance, _heuristic, _value_threshold,_normalize):
+    def __init__(self, _words, _distance, _heuristic, _value_threshold, _normalize):
         self.words = _words
         # distance alg
         self.distance = _distance
@@ -24,7 +24,7 @@ class BAG:
         filtered_values = []
         for i in range(len(img_values)):
             val = img_values[i]
-            if val >= self.threshold:
+            if val > self.threshold:
                 filtered_values.append((i, val));
         self.bag[_id] = filtered_values
 
@@ -37,31 +37,38 @@ class BAG:
             value = self.heuristic.getValue(xword, _descriptors)
             img_values.append(value)
         if self.norm:
-            return self.normalize(img_values)
+            return BAG.normalize(img_values)
         else:
             return img_values
 
-    def magnitude(self, v):
+    @staticmethod
+    def magnitude(v):
         return math.sqrt(sum(v[i] * v[i] for i in range(len(v))))
 
+    @staticmethod
     def normalize(self, v):
-        vmag = self.magnitude(v)
+        vmag = BAG.magnitude(v)
         return [v[i] / vmag for i in range(len(v))]
 
     def getSimilar(self, _descriptors, _threshold):
         img_values = self._getSimilarityVector(_descriptors)
         ret = []
         for key, value in self.bag.items():
-            #reduce vectors only to non zero values
+            # reduce vectors only to non zero values
             v1 = []
             v2 = []
             for val in value:
                 v1.append(val[1])
                 v2.append(img_values[val[0]])
 
-            similarity = self.distance.distance(v1, v2)
-            if (similarity >= _threshold):
-                ret.append((key, similarity))
+            if len(v1)>=1 and len(v2)>=1:
+                try:
+                    similarity = self.distance.distance(v1, v2)
+                    if (similarity >= _threshold):
+                        ret.append((key, similarity))
+                except:
+                    print('v1:' + v1 + ' v2:' + v2)
+
         ret.sort(key=lambda tup: tup[1], reverse=True)
         return ret
 

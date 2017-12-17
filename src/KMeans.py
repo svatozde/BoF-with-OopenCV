@@ -23,8 +23,6 @@ class KMeans:
 
         self.initial = _initial
 
-
-
     def cluster(self):
         return self.find_centers(self.vectors, self.k)
 
@@ -39,9 +37,7 @@ class KMeans:
                 clusters[nearest].append(x)
             except KeyError:
                 clusters[nearest] = [x]
-
         return clusters
-
 
 
     def reevaluate_centers(self, clusters):

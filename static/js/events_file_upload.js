@@ -29,9 +29,15 @@ input.on('filebatchuploadsuccess', function(event,response){
 
     for (index = 0; index < response.response.length; ++index) {
         console.log(response.response[index]);
-        var imgTag = '<div class="col-lg-3 col-md-4 col-xs-6"><a href="#" class="d-block mb-4 h-100"><img class="img-fluid img-thumbnail" src="images/'+ response.response[index]+'" alt=""></a></div>';
+        var imgTag = '<div class="col-lg-3 col-md-4 col-xs-6"><a href="#" class="d-block mb-4 h-100"><img class="img-fluid img-thumbnail" src="static/uploads/'+ response.response[index]+'" alt=""></a></div>';
         var div = document.createElement('div');
         div.innerHTML = imgTag;
+
+        div.onclick = function(){
+            var modal = $("#myModal")
+            modal.style.display = "block";
+        }
+
         console.log(div.childNodes);
         console.log(div.childNodes[0]);
         x.appendChild(div.childNodes[0]);
